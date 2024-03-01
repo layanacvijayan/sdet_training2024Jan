@@ -2,32 +2,36 @@ package SdetTestPackages;
 
 public class Automation2 extends Automation
 {
-public Automation2()
+public void m5()
 {
-	this(345,8);
-	System.out.println("Child Class default Constructor");
+	System.out.println("Child default method");
 }
-public Automation2(int a)
+public void m6(int a)
 {
-	this(345,8,9);
-	System.out.println("Child Class one parameterized Constructor");
+	
+	System.out.println("Child one parameterized method");
 }
-public Automation2(int a,int b)
-{   
-	this();
-	System.out.println("Child Class two parameterized Constructor");
+public void m7(int a,int b)
+{  
+	super.m3(4, 6);
+	super.m1();
+	super.m4(8, 90,889);
+    super.m2(4);
+	System.out.println("Child two parameterized method");
 }
-public Automation2(int a,int b,int c)
+public void m8(int a,int b,int c)
 {
-		
-	super(555,88);
-	System.out.println("Child Class three parameterized Constructor");
+this.m7(44, 77);
+this.m6(36);
+this.m5();
+	System.out.println("Child three parameterized Constructor");
 }
-
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-Automation2 a2=new Automation2(3);
+Automation2 a2=new Automation2();
+a2.m8(12,25,89);
+
 	}
 
 }

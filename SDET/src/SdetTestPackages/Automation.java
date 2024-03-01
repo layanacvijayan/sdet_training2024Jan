@@ -2,25 +2,25 @@ package SdetTestPackages;
 
 public class Automation {
 
-	public Automation()
+	public void m1()
 	{
 		System.out.println("Parent class default method");
 	}
-	public Automation(int a)
+	public void m2(int a)
 	{
-	System.out.println("Parent class one parameterizedmethod");
+	System.out.println("Parent class one parameterized method");
 	}
-	public Automation(int a, int b)
+	public void m3(int a, int b)
 	{
 		
 	System.out.println("Parent class two parameterized method");
 	}
-	public Automation(int a, int b,int c)
+	public void m4(int a, int b,int c)
 	{
-		this(454,678);
+		
 	System.out.println("Parent class three parameterized method");
 	}
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
